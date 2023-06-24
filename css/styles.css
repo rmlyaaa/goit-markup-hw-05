@@ -87,22 +87,28 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #404bbf;
+    color: #434455;
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-item-text::after {
+.nav-item-text.active::after {
     content: '';
     position: absolute;
     left: 0;
+    bottom: 0;
     bottom: -1px;
     height: 4px;
+    width: 100%;
     background-color: #404bbf;
     border-radius: 2px;
-
+    display: block;
 }
 
+.active {
+    color: #404bbf;
+    position: relative;
+}
 
 .address {
     font-style: normal;
@@ -135,8 +141,6 @@ img {
 .adress-item-text:hover,
 .adress-item-text:focus {
     color: #404BBF;
-    border-bottom: 4px solid #404BBF;
-    border-radius: 2px;
 }
 
 /* WELCOME CONTENT */
